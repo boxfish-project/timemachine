@@ -22,7 +22,8 @@
     "time"
   ],
   "dependencies": {
-    "express": "~4.13.4"
+    "express": "~4.13.4",
+    "body-parser":"~1.15.1"
   },
   "engines": {
     "node": ">= 5.0.0"
@@ -35,6 +36,6 @@
   ],
   "readmeFilename": "Readme.md",
   "bugs": {
-    "url": "https://github.com/boxfish-project/timemachine"
+    "url": "https://github.com/boxfish-project/timemachine/issues"
   }
 }
