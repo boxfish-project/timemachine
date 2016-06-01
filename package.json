@@ -1,0 +1,40 @@
+{
+  "name": "TimeMachine",
+  "description": "A node script that changes the system's time",
+  "version": "0.0.1",
+  "author": {
+      "name": "TiansHUo",
+      "email": "tianshuo@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "JohnNinja",
+      "email": "1533255996@qq.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/boxfish-project/timemachine"
+  },
+  "keywords": [
+    "node",
+    "time"
+  ],
+  "dependencies": {
+    "express": "~4.13.4"
+  },
+  "engines": {
+    "node": ">= 5.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "app.js",
+    "public/"
+  ],
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/boxfish-project/timemachine"
+  }
+}
