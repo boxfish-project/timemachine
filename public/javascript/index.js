@@ -48,27 +48,37 @@ $(function(){
 			case 'years':
 				if (!/^\d{4}$/.test(val)) {
 					right = false;
-				}
+				}else{
+                    travelEntity.years=val;
+                }
 				break;
 			case 'months':
 				if (!/^((0)?[1-9]|1[0-2])$/.test(val)) {
 					right = false;
-				}
+				}else{
+                    travelEntity.months=val;
+                }
 				break;
 			case 'days':
 				if (!/^((0)?[1-9]|[1-2][0-9]|3[0-1])$/.test(val)) {
 					right = false
-				}
+				}else{
+                    travelEntity.days=val;
+                }
 				break;
 			case 'hours':
 				if (!/^((0)?[0-9]|1[0-9]|2[0-3])$/.test(val)) {
 					right = false
-				}
+				}else{
+                    travelEntity.hours=val;
+                }
 				break;
 			case 'minutes':
 				if (!/^((0)?[0-9]|[1-5][0-9])$/.test(val)) {
 					right = false
-				}
+				}else{
+                    travelEntity.minutes=val;
+                }
 				break;
 		}
 
@@ -77,6 +87,8 @@ $(function(){
 		}else{
 			$(this).removeClass('wrong');
 			$('#travel-btn').show();
+            $('#tip').show();
+		    $('#frozen').hide();
 		}
 	});
 
@@ -86,12 +98,14 @@ $(function(){
 		$.ajax({
 			url: '/time',
 			method: 'POST',
+            dataType: 'JSON',
 			data: {date:timeStamp},
 			success: function(data){
 				$('#tip').show();
 				$('#frozen').hide();
 				travelEntity.timeStamp = data.date;
 				travelEntity.countTime();
+                $('#travel-btn').hide();
 			}
 		});
 	})
