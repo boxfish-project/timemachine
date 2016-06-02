@@ -1,4 +1,4 @@
-Changes server time for [node](http://nodejs.org).
+Changes server time using [node](http://nodejs.org).
 
 ## Quick Start
 
@@ -6,10 +6,15 @@ Changes server time for [node](http://nodejs.org).
 `node    ALL=NOPASSWD: /bin/date`
 2. Run app.js
 
+## Usage
+
+1. Test features related to time (reservations, cron jobs, etc)
+2. Travel to the past or future!
+
 ## Features
 
   * Shows current server time
-  * Changes current server time
+  * Changes current server time remotely
 
 ## License
 
